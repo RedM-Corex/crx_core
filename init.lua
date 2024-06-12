@@ -1,0 +1,1 @@
+CRX = exports["crx-core"]:getSharedObject()

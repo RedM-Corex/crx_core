@@ -2,7 +2,7 @@
 CRX = {}
 CRX.Version = (GetResourceMetadata(GetCurrentResourceName(), "version", 0) or "1.0.0")
 
-exports('CRX', function()
+exports('getSharedObject', function()
     return CRX
 end)
 
