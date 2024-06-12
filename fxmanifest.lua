@@ -7,15 +7,19 @@ description 'The Corex Core Framework for RedM'
 
 
 shared_scripts {
-    'config.lua'
+    'config.lua',
 }
 
 client_scripts {
     'src/client/common.lua',
-    'src/client/main.lua'
+    'src/client/functions.lua',
+    'src/client/main.lua',
+    'src/shared/modules/*.lua'
 }
 
 server_scripts {
     'src/server/common.lua',
-    'src/server/main.lua'
+    'src/server/functions.lua',
+    'src/server/main.lua',
+    'src/shared/modules/*.lua'
 }
