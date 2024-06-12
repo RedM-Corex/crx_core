@@ -15,10 +15,6 @@ function OnPlayerJoined(source)
 
 end
 
-
-
-
--- [[  ]] --
 AddEventHandler("playerConnecting", function(_, _, deferrals)
     deferrals.defer()
     local playerId = source

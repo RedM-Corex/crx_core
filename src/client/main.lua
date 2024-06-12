@@ -8,6 +8,8 @@ CreateThread(function()
     DoScreenFadeOut(0)
     Wait(500)
     TriggerServerEvent("crx-core:sv:playerJoined")
+    
+    DoScreenFadeIn(0) -- Tijdelijk
 end)
 
 -- [[ Misc Functions ]] --

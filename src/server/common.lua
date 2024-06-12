@@ -41,6 +41,7 @@ end
 
 -- [[ Debug ]] --
 CRX.Debug = {}
+
 --- @param message any
 CRX.Debug.Info = function(message)
     print("^1[CRX] [INFO] ^7: " .. message)

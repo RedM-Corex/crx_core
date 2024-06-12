@@ -19,9 +19,9 @@ Config.HideHorseCores = true
 Config.HideMiniMap = true
 
 Config.RequireIdentifiers = {
-    "steam",
-    "license",
-    "discord",
+    "license", -- Required
+    "steam",   -- Recommended 
+    "discord", -- Recommended 
     -- "xbl",
     -- "live",
 }
