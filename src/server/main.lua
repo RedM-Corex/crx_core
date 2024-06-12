@@ -19,9 +19,16 @@ AddEventHandler("playerConnecting", function(_, _, deferrals)
     deferrals.defer()
     local playerId = source
 
+    -- Check if OneSync is enabled
     if oneSyncState == "off" or oneSyncState == "legacy" then
         deferrals.done("[🚧] - Ask the server owner to enable OneSync.")
         CRX.Debug.Error("Enable OneSync to play on the server.")
+        return
+    end
+
+    -- Check if database is connected
+    if not Core.DatabaseConnected then
+        deferrals.done("[🚧] - Database is not ready or connected.")
         return
     end
 
