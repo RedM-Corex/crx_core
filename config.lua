@@ -17,3 +17,11 @@ Config.HideOnlyDEADEYE = true
 Config.HidePlayersCore = true
 Config.HideHorseCores = true
 Config.HideMiniMap = true
+
+Config.RequireIdentifiers = {
+    "steam",
+    "license",
+    "discord",
+    -- "xbl",
+    -- "live",
+}
