@@ -39,12 +39,20 @@ AddEventHandler("playerConnecting", function(_, _, deferrals)
         return
     end
 
+    -- Check if the player has the required identifiers
     for _, identifier in ipairs(Config.RequireIdentifiers) do
         local hasIdentifier = GetPlayerIdentifierByType(playerId, identifier)
         if not hasIdentifier then
             deferrals.done(("[🚧] - You are missing the %s identifier."):format(identifier))
             return
         end
+    end
+
+    -- Check if the server is full
+    local maxPlayers = GetConvarInt("sv_maxclients", 32)
+    if #GetPlayers() >= maxPlayers then
+        deferrals.done("[🚧] - The server is full.")
+        return
     end
 
     CRX.Debug.Info(("Player %s connected to the server."):format(identifier))
