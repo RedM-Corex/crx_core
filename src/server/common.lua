@@ -10,8 +10,3 @@ end)
 Core = {}
 Core.Players = {}
 Core.PlayersByIdentifier = {}
-
-
-RegisterCommand("testLocale2", function()
-    print(CRX.Translate("Pizza", "aDawdawdawdAD"))
-end, false)
