@@ -40,3 +40,15 @@ CRX.Locale = CRX.Translate
 -- Example Using Placeholders:
 --     print(CRX.Translate("welcome", "John")) -- Replace %s in the translation with "John".
 --     print(CRX.Locale("welcome", "John")) -- Replace %s in the translation with "John".
+
+
+
+
+
+
+-- Unload the locale file when the resource stops.
+RegisterNetEven("onResourceStop", function(res) -- IDK if this works.
+    if Locales[res] then
+        Locales[res] = nil
+    end
+end)
