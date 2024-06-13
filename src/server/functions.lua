@@ -83,6 +83,30 @@ CRX.DoesJobExist = function(name)
 end
 
 ---------------------------------------------------------
+-- [[ Misc ]] --
+---------------------------------------------------------
+CRX.Commands = {}
+CRX.CreateCommand = function(commandName, options)
+    if CRX.Commands[commandName] then
+        CRX.Debug.Warn(("Command %s already exists."):format(commandName))
+        return
+    end
+
+    if not commandName then
+        CRX.Debug.Error("Command name is required.")
+        return
+    end
+
+    if not options or type(options) ~= "table" then
+        CRX.Debug.Error(("Options for command %s are required."):format((type(commandName) == table and commandName[1] or commandName)))
+        return
+    end
+
+    CreateCommand(commandName, options)
+end
+
+
+---------------------------------------------------------
 -- [[ Log ]] --
 ---------------------------------------------------------
 CRX.Log = {}
