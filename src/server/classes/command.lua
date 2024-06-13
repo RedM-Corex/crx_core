@@ -47,15 +47,10 @@ function CreateCommand(commandName, options)
             return
         end
 
-        local player = CRX.GetPlayerById(source)
-        if not player then
-            return
-        end
 
-        
 
-    
-    
+
     end, false)
 
+    CRX.Commands[commandName] = self
 end

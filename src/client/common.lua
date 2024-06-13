@@ -4,3 +4,4 @@ CRX = {}
 exports('getSharedObject', function()
     return CRX
 end)
+

@@ -14,6 +14,12 @@ Core.PlayersByIdentifier = {}
 Core.DatabaseConnected = false
 
 MySQL.ready(function()
+    
+    -- Load jobs
+    CRX.RefreshJobs()
+
+
+    -- Set database connected
     Core.DatabaseConnected = true
     CRX.Debug.Info("Database connected successfully.")
 end)
