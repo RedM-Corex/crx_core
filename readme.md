@@ -1,4 +1,4 @@
-# CRX - Corex Frmaework ( REDM )
+# CRX - Corex Framework ( REDM )
 
 ## Introduction
 
