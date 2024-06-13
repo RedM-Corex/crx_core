@@ -30,7 +30,6 @@ CRX.GetPlayerById = function(source)
     return (Core.Players[source] or false)
 end
 
-
 ---------------------------------------------------------
 -- [[ Jobs ]] --
 ---------------------------------------------------------
@@ -82,9 +81,6 @@ end
 CRX.DoesJobExist = function(name)
     return (CRX.Jobs[name] ~= nil)
 end
-
-
-
 
 ---------------------------------------------------------
 -- [[ Log ]] --
