@@ -47,7 +47,7 @@ CRX.Locale = CRX.Translate
 
 
 -- Unload the locale file when the resource stops.
-RegisterNetEven("onResourceStop", function(res) -- IDK if this works.
+RegisterNetEvent("onResourceStop", function(res) -- IDK if this works.
     if Locales[res] then
         Locales[res] = nil
     end
