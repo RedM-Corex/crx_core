@@ -15,13 +15,5 @@ Core.DatabaseConnected = false
 
 MySQL.ready(function()
     Core.DatabaseConnected = true
-    CRX.Debug.Info("Database connected")
-    
-    -- local items = MySQL.Sync.fetchAll("SELECT * FROM `players`")
-    -- for _, v in ipairs(items) do
-    --     CRX.Items[v.name] = {label = v.label, weight = v.weight, canRemove = v.canRemove}
-    -- end
-
-    -- CRX.Debug.Info(("Loaded %s items."):format(#items))
-
+    CRX.Debug.Info("Database connected successfully.")
 end)
