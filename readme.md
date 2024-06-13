@@ -7,7 +7,7 @@
 
 
 ## Requirements
-- ox_lib
-- ox_mysql
-- ox_inventory ( our version )
-- ox_target ( our version )
+- [ox_lib](https://github.com/overextended/ox_inventory)
+- [ox_mysql](https://github.com/overextended/oxmysql)
+- ox_inventory ( our version ) ( SOON )
+- ox_target ( our version ) ( SOON )
